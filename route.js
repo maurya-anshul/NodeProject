@@ -38,4 +38,7 @@ const method=req.method;
         });
       }
 });
-module.exports=requestHandler;
+module.exports={
+    handler: requestHandler,
+    someText:'some hard coded text'
+}
