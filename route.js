@@ -38,7 +38,14 @@ const method=req.method;
         });
       }
 });
-module.exports={
-    handler: requestHandler,
-    someText:'some hard coded text'
-}
+// module.exports={
+//     handler: requestHandler,
+//     someText:'some hard coded text'
+// }
+
+// module.exports.handler=requestHandler;
+// module.exports.someText='Some hard coded text'
+
+
+exports.handler=requestHandler;
+exports.someText='Some hard coded text'
